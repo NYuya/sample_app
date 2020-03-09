@@ -11,17 +11,12 @@ class TodolistsController < ApplicationController
          list.save
         # トップ画面へリダイレクト
         redirect_to '/top'
-    end
+  end
 
 
-
-
-
-
-
-
-
-
+  def index
+    @lists = List.all
+  end
 
 
 
